@@ -4,6 +4,7 @@
 https://docs.docker.com/desktop/install/mac-install/
 
 ## clone repo
+`git clone https://github.com/jpfon/csv-mr.git`
 
 ## build image
 `docker build . -t csv-mr`
