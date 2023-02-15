@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "csv-mr"
+version = "0.1.0"
+description = "merge csvs for mr"
+authors = ["Joao Fonseca"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^1.5"
+openpyxl = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  csv_mr:
+    build: .
+    ports:
+    - "8000:8000"
+    volumes:
+    - .:/app
+    command: ["tail",  "-F",  "anything"]
