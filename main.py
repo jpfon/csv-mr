@@ -53,7 +53,7 @@ def get_output(dfs: list[pd.DataFrame], key: str) -> Optional[pd.DataFrame] :
         return dfs[0]
     else:
         try:
-            return reduce(lambda x, y: pd.merge(x, y, on=key), dfs)
+            return reduce(lambda x, y: pd.merge(x, y, on=key, how="outer"), dfs)
         except Exception as e:
             print("unable to merge files")
             print (e)
